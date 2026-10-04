@@ -164,4 +164,4 @@ This project focuses on the frontend homepage experience. It does not include a 
 
 **Venkatesh Macharla**
 
-Frontend Developer
+Frontend Developer | Full Stack Devloper
