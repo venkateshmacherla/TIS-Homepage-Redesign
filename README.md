@@ -1,36 +1,167 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tulas International School — Homepage Redesign
+
+A modern homepage redesign for Tulas International School (TIS), created as part of the Frontend Developer assessment.
+
+The goal was to keep the school's existing identity while giving the homepage a more premium, modern and interactive experience.
+
+## Live Website
+
+[View Live Website](YOUR_VERCEL_URL)
+
+## GitHub Repository
+
+[View Source Code](https://github.com/venkateshmacherla/TIS-Homepage-Redesign)
+
+## What I Built
+
+The homepage is designed as a single-page experience with:
+
+- Responsive navigation with mobile menu
+- Premium hero section
+- About TIS section
+- School statistics
+- Academics section
+- Campus and facilities section
+- Sports section
+- Parent testimonials
+- Admissions call-to-action
+- Footer
+
+## Interactive Features
+
+I implemented three interactive features from the assessment requirements:
+
+- Scroll progress indicator
+- Scroll-triggered section reveals
+- Custom cursor for desktop users
+
+The custom cursor is disabled on touch devices so it does not interfere with mobile interaction.
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── animation/
+│   │   ├── CustomCursor.tsx
+│   │   ├── Reveal.tsx
+│   │   └── ScrollProgress.tsx
+│   │
+│   ├── layout/
+│   │   ├── Footer.tsx
+│   │   └── Navbar.tsx
+│   │
+│   └── sections/
+│       ├── AboutSection.tsx
+│       ├── AcademicsSection.tsx
+│       ├── AdmissionsSection.tsx
+│       ├── CampusSection.tsx
+│       ├── HeroSection.tsx
+│       ├── SportsSection.tsx
+│       ├── StatsSection.tsx
+│       └── TestimonialsSection.tsx
+│
+├── data/
+├── hooks/
+└── styles/
+```
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/venkateshmacherla/TIS-Homepage-Redesign.git
+```
+
+Move into the project:
+
+```bash
+cd TIS-Homepage-Redesign
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Production Build
 
-## Learn More
+To check the production build locally:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the production server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+## Responsive Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The homepage was designed and tested for:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Mobile — 375px
+- Tablet — 768px
+- Desktop — 1280px and above
+
+The navigation, layouts, typography and animations adapt across screen sizes.
+
+## Design Direction
+
+The visual direction follows a premium editorial style while retaining the TIS identity.
+
+The main palette uses:
+
+- Deep navy
+- Warm gold
+- Off-white
+- Neutral grey
+
+Large typography, generous spacing, rounded surfaces and subtle motion are used to create a more contemporary school website experience.
+
+## Animation Approach
+
+Framer Motion is used for the interactive parts of the page.
+
+`Reveal` is a reusable component for scroll-triggered animations rather than repeating animation configuration throughout each section.
+
+The custom cursor uses Framer Motion motion values and springs so pointer movement does not require React state updates for every mouse event.
+
+## Notes
+
+This project focuses on the frontend homepage experience. It does not include a backend, authentication system or CMS because they are outside the scope of the homepage redesign assessment.
+
+## Author
+
+**Venkatesh Macharla**
+
+Frontend Developer
