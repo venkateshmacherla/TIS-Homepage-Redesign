@@ -1,10 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
+import Reveal from "@/components/animation/Reveal";
 
 export default function AboutSection() {
   return (
     <section id="about" className="bg-[#f7f5ef] px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+        <Reveal className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-[#c6a15b]">
               About TIS
@@ -36,7 +37,7 @@ export default function AboutSection() {
               <ArrowUpRight size={17} />
             </a>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

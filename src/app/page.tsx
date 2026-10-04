@@ -1,3 +1,5 @@
+import CustomCursor from "@/components/animation/CustomCursor";
+import ScrollProgress from "@/components/animation/ScrollProgress";
 import AboutSection from "@/components/sections/AboutSection";
 import AcademicsSection from "@/components/sections/AcademicsSection";
 import AdmissionsSection from "@/components/sections/AdmissionsSection";
@@ -12,6 +14,9 @@ import Navbar from "@/components/layout/Navbar";
 export default function Home() {
   return (
     <main id="top">
+      <ScrollProgress />
+      <CustomCursor />
+
       <Navbar />
 
       <HeroSection />
