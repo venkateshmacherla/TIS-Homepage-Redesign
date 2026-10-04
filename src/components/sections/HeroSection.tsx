@@ -66,7 +66,7 @@ export default function HeroSection() {
           <div className="relative">
             <div className="relative ml-auto aspect-4/5 w-full max-w-xl overflow-hidden rounded-4xl">
               <Image
-                src="https://tis.edu.in/wp-content/uploads/2024/05/slider-1.jpg"
+                src="/images/img-hero-campus.png"
                 alt="Tulas International School campus"
                 fill
                 priority

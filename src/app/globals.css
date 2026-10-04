@@ -39,3 +39,29 @@ button {
   background: var(--secondary);
   color: var(--primary);
 }
+
+/* Prevent text caret on normal website content */
+body,
+body * {
+  caret-color: transparent;
+  user-select: none;
+}
+
+/* Keep form fields editable */
+input,
+textarea,
+select,
+[contenteditable="true"] {
+  caret-color: auto;
+  user-select: text;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
