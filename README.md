@@ -6,7 +6,7 @@ The goal was to keep the school's existing identity while giving the homepage a 
 
 ## Live Website
 
-[View Live Website](YOUR_VERCEL_URL)
+[View Live Website](https://tis-homepage-redesign-ashy-theta.vercel.app/)
 
 ## GitHub Repository
 
